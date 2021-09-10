@@ -1,0 +1,35 @@
+body {
+    margin: 0 4em;
+}
+h1 {
+    text-align: center;
+    margin-top: 2em;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+}
+p {
+    text-align: justify;
+    font-size: 1.7em;
+}
+.parrafo-margen {
+
+margin-top: 2em;
+margin-left: 5em;
+}
+.border-1 {
+    border-top: 3px solid aquamarine;
+}
+.border-2 {
+    border: 4px solid green;
+}
+.espaciado-interno-1 {
+    border: 3px solid violet;
+    padding: 15px;
+}
+.espaciado-interno-2 {
+    border: 4px solid yellow;
+    margin-top: 2,5em;
+    padding: 50px;
+    background: yellow;
+    color: black;
+}

@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    cursor: pointer;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    position: absolute;
+    background-color: rgb(5, 51, 36);
+<<<<<<< HEAD
+    width: 100%;
+=======
+    width: 110%;
+>>>>>>> 29a78a215676de0e8f5fa29f322f7f113fb5fbf4
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0 2.5em;
+}
+.item {
+    line-height: 3em;
+    display: inline-block;
+    position: relative;
+    text-align: right;
+}
+a:hover {
+    background: rgb(8, 90, 63);;
+    transition: all .3s;
+}
+.sub-item {
+    text-align: center;
+    transition: all 1.5s;
+    max-height: 0;
+    background: rgb(5, 51, 36);;
+}
+.item:hover .sub-item {
+    display: block;
+    max-height: 500px;
+    border-bottom: 1px solid honeydew;
+}

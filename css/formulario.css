@@ -1,0 +1,47 @@
+body {
+    background-image: linear-gradient(to right, #0084DB, #0083BD);
+}
+h1 {
+    text-align: center;
+}
+fieldset {
+    width: 60%;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
+.box-formulario {
+    width: 80%;
+    display: block;
+    margin: 25px auto;
+}
+.controls {
+    margin-bottom: 1.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    height: 40px;
+    width: 350px;
+}
+.controls-check {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    margin-bottom: .7em;
+}
+label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.controls-button {
+    margin-bottom: 1.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    color: whitesmoke;
+    height: 40px;
+    width: 700px;
+    cursor: pointer;
+    background-color: blue;
+    font-size: 1.5em;
+}
+.controls-button:hover {
+    transform: translate(3px);
+    background-color: aquamarine;
+}

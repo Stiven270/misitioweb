@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: blue;
+}
+ul {
+    list-style: none;
+    font-size: 1.5em;
+    text-align: right;
+}
+li {
+    display: inline-block;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: cornsilk;
+}
+li:hover {
+    background-color: darkblue;
+}
+.main-content {
+    margin: 3em;
+}
