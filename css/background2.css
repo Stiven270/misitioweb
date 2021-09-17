@@ -1,0 +1,27 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin-top: 25px;
+}
+ul {
+    text-align: right;
+    list-style: none;
+}
+li {
+    display: inline-block;
+}
+a {
+    text-decoration: none ;
+    font-size: 1.5em;
+    margin: 25px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.img-principal {
+    width: 100%;
+}
