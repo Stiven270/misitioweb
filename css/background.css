@@ -3,25 +3,41 @@
     padding: 0;
 }
 .main {
+<<<<<<< HEAD
     background-image: url("../img/iniciar\ sesion.jpg");
+=======
+    background-image: url("../img/boton.jpg");
+>>>>>>> developed
     width: 95%;
     height: 90vh;
 }
 body {
+<<<<<<< HEAD
     background-image: url("../img/agua.jpg");
+=======
+    background-image: url("../img/imagenes-grandes-de-paisajes-montañas.jpg");
+>>>>>>> developed
     background-repeat: no-repeat;
     background-size: cover;
 }
 @media only screen and (max-width: 800px) {
     body {
+<<<<<<< HEAD
     background-image: url("../img/agua1.jpg");
+=======
+    background-image: url("../img/imagenes-grandes-de-paisajes-montañas1.jpg");
+>>>>>>> developed
     background-repeat: no-repeat;
     background-size: cover;
 }    
 }
 @media only screen and (max-width: 600px) {
     body {
+<<<<<<< HEAD
     background-image: url("../img/agua2.jpg");
+=======
+    background-image: url("../img/imagenes-grandes-de-paisajes-montañas2.jpg");
+>>>>>>> developed
     background-repeat: no-repeat;
     background-size: cover;
 }    
