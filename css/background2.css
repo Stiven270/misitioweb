@@ -1,14 +1,4 @@
 * {
-<<<<<<< HEAD
-   margin: 0;
-   padding: 0;
-}
-nav {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    margin-top: 25px;
-=======
     margin: 0;
     padding: 0;
 }
@@ -19,7 +9,6 @@ nav {
     background-color:rgb(224, 214, 195);
     padding: 25px;
 
->>>>>>> developed
 }
 ul {
     text-align: right;
@@ -29,17 +18,6 @@ li {
     display: inline-block;
 }
 a {
-<<<<<<< HEAD
-    text-decoration: none ;
-    font-size: 1.5em;
-    margin: 25px;
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.img-principal {
-    width: 100%;
-}
-=======
     text-decoration: none;
     color: rgb(100, 83, 83);
     margin: 25px;
@@ -73,4 +51,3 @@ p {
 .box-categorias {
     margin-top: 20px;
 }
->>>>>>> developed
