@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    background-image: url("../img/boton.jpg");
+    width: 95%;
+    height: 90vh;
+}
+body {
+    background-image: url("../img/imagenes-grandes-de-paisajes-montañas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-width: 800px) {
+    body {
+    background-image: url("../img/imagenes-grandes-de-paisajes-montañas1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+}
+@media only screen and (max-width: 600px) {
+    body {
+    background-image: url("../img/imagenes-grandes-de-paisajes-montañas2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+}
