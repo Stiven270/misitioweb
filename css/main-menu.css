@@ -2,25 +2,29 @@
     margin: 0;
     padding: 0;
 }
-nav {
-    background-color: blue;
-}
-ul {
-    list-style: none;
-    font-size: 1.5em;
-    text-align: right;
-}
-li {
-    display: inline-block;
-    padding: 10px;
-}
-a {
-    text-decoration: none;
-    color: cornsilk;
-}
-li:hover {
-    background-color: darkblue;
+.contenedor {
+    background-color: rgb(102, 100, 100);
+    position: absolute;
+    width: 200px;
+    height: 150%;
+    margin-left: 10px;
 }
 .main-content {
-    margin: 3em;
+    margin-left: 300px;
+    font-size: 50px;
+    margin-top: 0%;
+}
+li {
+    margin-top: 10px;
+    margin-left: 15px;
+    list-style: none;
+}
+
+a {
+    color: cornsilk;
+    font-size: 24px;
+    text-decoration: none;
+    
+    
+
 }
