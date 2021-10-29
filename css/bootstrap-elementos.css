@@ -1,0 +1,28 @@
+/* .row>[class^="col-"]{
+    border: 1px solid brown;
+} */
+.column {
+    margin-bottom: 30px;
+
+}
+.col {
+    border: 1px solid blueviolet;
+}
+.grid{
+    border: 1px solid green;
+}
+.row {
+    margin-bottom: 30px;
+}
+h2 {
+    text-align: center;
+}
+.pointer-cursor {
+    cursor: pointer;
+}
+.style-container {
+    margin-top: 20px;
+}
+.container {
+    margin-top: 20px;
+}
