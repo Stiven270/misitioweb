@@ -26,4 +26,42 @@ h2 {
 .container {
     margin-top: 20px;
 }
+.box-1 {
+    margin-top: 20px;
+    background: rgb(79, 97, 64);
+    color: white;
+    height: 90px;
+    font-size: 1.7em;
+    margin-bottom: .1em;
+    text-align: center;
+}
+
+.grillas {
+    margin-bottom: 30px;
+    border: 1px solid rgb(48, 48, 48, .8);
+}
+
+.row>[class^="col-4"] {
+    border: 1px solid rgb(48, 48, 48, .8);
+}
+
+
+.grid {
+    margin-bottom: 30px;
+}
+
+select {
+    margin-bottom: 30px;
+}
+
+.space-cards {
+    margin: 20px;
+    padding: 20px;
+}
+.carousel-item {
+    padding-left: 300px;
+    padding-bottom: 60px;
+}
+
+
 
