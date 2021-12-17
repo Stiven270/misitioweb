@@ -25,4 +25,3 @@ console.log("hoy es: " + diaActual + " del mes " + mesActual +" del año " + any
 
 var diasSemanas = ["domingo" , "lunes" , "master" , "miercoles" , "jueves" , "viernes" , "sabado"];
 var diasSemanaStr = diasSemanas[diaSemana]
-var mesAnio = 
