@@ -22,7 +22,7 @@ ul {
     list-style: none;
 }
 nav ul {
-    text-align: right;
+    text-align: left;
 }
 nav ul li {
     display: inline-block;
@@ -31,7 +31,7 @@ nav ul li:hover{
     background-color: rgb(66, 61, 61);
 }
 nav ul li i {
-    margin-right: 10px;
+    margin-right: 7px;
 }
 nav ul .fa-chevron-down {
     position: relative;
