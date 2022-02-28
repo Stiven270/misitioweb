@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrito</title>
+    <link rel="stylesheet" href="css/carrito.css">
+</head>
+<body>
+<div class="carrito">
+    <div class="move">
+        <img src="img/samsung_galaxi_a10.png" alt="#">
+    </div>
+
+    <div class="hola" >
+    
+        <button class="sumRest" id="disminuir" onclick="disminuirUnidades();">-</button>
+        <input class="sumRest" type="button"  id="cantidad" value="0">
+        <button class="sumRest" id="aumentar" onclick="aumentarUnidades();">+</button>
+    </div>
+</div>
+
+    <script>
+
+        let inicio = 0
+        let cantidad = "";
+
+        function aumentarUnidades() {
+            if(inicio <=9){
+                cantidad = document.getElementById("cantidad").value = ++inicio;
+                document.getElementById("total").innerHTML = cantidad;
+            }
+        }
+        function disminuirUnidades() {
+            if(inicio >=1){
+                cantidad = document.getElementById("cantidad").value = --inicio;
+                document.getElementById("total").innerHTML = cantidad
+            }
+        }
+    </script>
+</body>
+</html>
