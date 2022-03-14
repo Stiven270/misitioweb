@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>carrito</title>
     <link rel="stylesheet" href="css/carrito.css">
+    <script src="js/carrito.js"></script>
 </head>
 <body>
 
 <div class="carrito">
     <div class="contenedor">
-        <label class="subTotal">subtotal COP <span id="multiplicar" class="punto" onclick="calcularSubtotal();"> 0 </span> pesos</label>
+        <h2> subtotal Cop<label class="subTotal" id="multiplicar">125000</label ></h2>
     </div>
     <div class="contenedor2">
-        <label class="pago">proceder al pago <span id="igual" class="num">(0 productos)</span></label>
+        <label class="pago">proceder al pago (<span class="num" id="igual">0</span> productos)</label>
     </div>
     <div class="contenedor3">
-        <p class="text">Grand Theft Auto es una serie de videojuegos <br> creada por David Jones y por los hermanos <br> Sam y Dan Houser. <br> <br> por Daniel Bravo <br> <br> Tapa blanda <br> <br> <label>Cop</label> <span class="num" id="valorUnidad">100000</span></p>
+        <p class="text">Grand Theft Auto es una serie de videojuegos <br> creada por David Jones y por los hermanos <br> Sam y Dan Houser. <br> <br> por Daniel Bravo <br> <br> Tapa blanda <br> <br> cop125.000</p>
+        
     </div>
     <div class="contenedor4">
         <a href="#" class="elim">Eliminar</a>
@@ -29,15 +31,19 @@
 
     <div class="botones" >
         <a href="#" class="sumRest" id="disminuir" onclick="disminuirUnidades();">-</a>
-        <input class="valor" type="button"  id="cantidad" value="0">
+        <input class="valor" type="button"  id="cantidad" value="0"  >
         <a href="#" class="sumRest" id="aumentar" onclick="aumentarUnidades();">+</a>
     </div>
 </div>
 
-    <script>
+    <!-- <script>
+        "user strict"
 
         let inicio = 0
         let cantidad = "";
+        let cantidadProducto
+        let totalProducto = 1000000;
+        let cantidadYaProducto
 
         function aumentarUnidades() {
     
@@ -46,25 +52,35 @@
                 cantidad = document.getElementById("cantidad").value = ++inicio;
                 document.getElementById("total").innerHTML = cantidad;
 
+                cantidadYaProducto = document.getElementById("multiplicar");
+                cantidadYaProducto.innerHTML = inicio * totalProductos ;
+
+             
+
             }
         }
         function disminuirUnidades() {
             if(inicio >=1){
                 cantidad = document.getElementById("cantidad").value = --inicio;
                 document.getElementById("total").innerHTML = cantidad
+
+                cantidadYaProducto = document.getElementById  ("multiplicar");
+                cantidadYaProducto.innerHTML = cantidad * totalProductos ;
+              
             }
         }
-        function calcularSubtotal() {
-            let numeroUnidades = document.getElementById("cantidad").innerHTML;
-            let valorUnidad = document.getElementById("valorUnidad").innerHTML;
+        // function calcularSubtotal() {
+        //     let numeroUnidades = document.getElementById("cantidad").innerHTML;
+        //     let valorUnidad = document.getElementById("valorUnidad").innerHTML;
 
-            let verSubtotal = number(numeroUnidades) * (number(valorUnidad));
+        //     let verSubtotal = Number(numeroUnidades) * Number(valorUnidad);
 
-            document.getElementById("multiplicar").innerHTML = verSubtotal;
-            alert(verSubtotal)
+        //     document.getElementById("multiplicar").innerHTML = verSubtotal;
+        //     alert(verSubtotal)
+            
     
-        }
+        // }
         
-    </script>
+     </script> -->
 </body>
 </html>
