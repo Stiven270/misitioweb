@@ -1,0 +1,36 @@
+.bt-menu {
+    display: block;
+    padding: 15px;
+    color: rgb(122, 203, 206);
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    font-size: 2.5em;
+    text-align: center;
+    gap: 20px;
+    background-color: antiquewhite;
+}
+ .hijo {
+    display: block;
+    padding: 20px;
+    color: white;
+   
+}
+/* .hijo .hijo-1 {
+    /* margin-left: 20%;
+    background-color: skyblue; */
+
+/* } */
+/* .main-content .hijo-2 {
+    grid-row-start:1 ;
+    grid-row-end: 6;
+
+}
+     */
