@@ -1,6 +1,7 @@
-"use strict"
+let nodoTabla = undefined;
+
 function crearEncabezado() {
-    let nodoTabla = document.createElement("table");
+    nodoTabla = document.createElement("table");
     let contenedor = document.getElementById ("table.js");
     contenedor.appendChild(nodoTabla);
 
@@ -36,16 +37,67 @@ function validarTabla() {
         crearEncabezado();
         
     }
+    else {
+        alert("ya esta")
+    }
 
 }
 function cargarProducto() {
+    if (validarFormulario()){
+
     validarTabla();
+
     let inputCodigo = document.getElementById("codigo").value;
     let inputCodigoNodo = document.createTextNode(inputCodigo);
 
     let inputDescripcion = document.getElementById("descripcion").value;
     let inputDescripcionNodo = document.createTextNode(inputDescripcion);
 
-    cargarInfoTabla(inputCodigoNodo, inputDescripcionNodo);
+    let inputValor = document.getElementById("valor").value;
+    let inputValorNodo = document.createTextNode(inputValor);
 
+    let inputUnidad = document.getElementById("unidadesStock").value;
+    let inputUnidadNodo = document.createTextNode(inputUnidad);
+
+    cargarInfoTabla(inputCodigoNodo, inputDescripcionNodo, inputValorNodo,inputUnidadNodo);
+
+  }
+}
+function cargarInfoTabla(codigo, descripcion,valor, unidad) {
+    let nodoProducto = document.createElement("tr");
+    nodoTabla.appendChild(nodoProducto)
+
+    let nodoCodigoTD = document.createElement("td");
+    nodoProducto.appendChild(nodoCodigoTD);
+    nodoCodigoTD.appendChild(codigo);
+
+    let nodoDescTD = document.createElement("td");
+    nodoProducto.appendChild(nodoDescTD);
+    nodoDescTD.appendChild(descripcion);
+
+    let nodoValTD = document.createElement("td");
+    nodoProducto.appendChild(nodoValTD);
+    nodoValTD.appendChild(valor);
+
+    let nodoUnidadTD = document.createElement("td");
+    nodoProducto.appendChild(nodoUnidadTD);
+    nodoUnidadTD.appendChild(unidad);
+
+
+}
+function validarFormulario(){
+    let inputCodigo = document.getElementById("codigo").value.trim();
+    if(inputCodigo ==""){
+    alert("por favor ingrese el codigo del producto");
+
+    
+
+
+    return false;
+
+   
+}
+  return true; 
+ 
+   
 }
