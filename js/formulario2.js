@@ -30,8 +30,17 @@ function crearEncabezado() {
 
     nodoTabla.setAttribute("class", "table-style");
     nodoTabla.setAttribute("id" , "table-stock");
+
+    // limpiarFormulario();
     
 }
+// function limpiarFormulario() {
+//     document.getElementById("codigo").value = "";
+//     document.getElementById("descripcion").value="";
+//     document.getElementById("valor").value="";
+//     document.getElementById("unidadesStock").focus();
+
+// }
 function validarTabla() {
     if (!document.getElementById("table-stock")) {
         crearEncabezado();
@@ -83,21 +92,47 @@ function cargarInfoTabla(codigo, descripcion,valor, unidad) {
     nodoProducto.appendChild(nodoUnidadTD);
     nodoUnidadTD.appendChild(unidad);
 
+    limpiarFormulario();
 
 }
+function limpiarFormulario() {
+    document.getElementById("codigo").value = "";
+    document.getElementById("descripcion").value="";
+    document.getElementById("valor").value="";
+    document.getElementById("unidadesStock").value="";
+}
+
 function validarFormulario(){
     let inputCodigo = document.getElementById("codigo").value.trim();
     if(inputCodigo ==""){
-    alert("por favor ingrese el codigo del producto");
+    alert("por favor ingrese el codigo del producto").focus();
+
+
 
     
 
 
-    return false;
+    // return false;
 
-   
+
+}
+
+//   return true; 
+let inputDescripcion = document.getElementById("descripcion").value.trim();
+if(inputDescripcion ==""){
+alert("por favor ingrese LA descripcion del producto");
+
+
+} 
+let inputValor = document.getElementById("valor").value.trim();
+if(inputValor ==""){
+alert("por favor ingrese el valor del producto");
+}
+
+let inputUnidadesStock = document.getElementById("unidadesStock").value.trim();
+if(inputUnidadesStock ==""){
+alert("por favor ingrese   las unidades del producto");
+return false;
 }
   return true; 
- 
-   
 }
