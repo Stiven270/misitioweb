@@ -1,27 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .bt-menu {
     display: block;
-    padding: 15px;
-    color: rgb(122, 203, 206);
+    padding: 20px;
+    color: rgb(49, 47, 47);
     font-size: 30px;
     font-weight: bold;
+    
 
 }
 .main-content {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template:     "hijo-1      hijo-3    hijo-2"/
+                           100px       3fr      100px;
     width: 100%;
-    max-width: 2000px;
     margin: 0 auto;
-    font-size: 2.5em;
+    background-color: rgb(243, 247, 8);
     text-align: center;
-    gap: 20px;
-    background-color: antiquewhite;
+
 }
- .hijo {
-    display: block;
+ .hijo-1 {
+    /* display: block; */
     padding: 20px;
-    color: white;
+    grid-area: hijo-1;
    
+}
+.hijo-2{
+    grid-area: hijo-2;
+    padding: 20px;
+}
+.hijo-3{
+    grid-area: hijo-3; 
+}
+.bt-menui {
+    border-radius: 20px;
+    border: none;
+    margin: 15px 15%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    outline: none;
+
+
 }
 /* .hijo .hijo-1 {
     /* margin-left: 20%;
@@ -34,3 +58,7 @@
 
 }
      */
+label {
+    font-size: 27px;
+
+}
