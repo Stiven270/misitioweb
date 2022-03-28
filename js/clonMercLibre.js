@@ -10,7 +10,7 @@ class Motocicleta {
 }
 let moto = new  Motocicleta("yamaha", " 3 ", " $ 20.000.000", "img/moto_Yamaha.png");
 function validarYamaha() {
-    // alert(moto.marca + " " + moto.modelo + " " + moto.precio + " la moto que necesitas")
+    
 
     mostrarMoto();
 }
@@ -44,7 +44,7 @@ function mostrarMoto (){
 let Deportiva = new Motocicleta ("deportiva", " 4 ", " $ 25.800.000", "img/moto_Deportiva.jpg");
 
 function validarDeportiva () {
-    // alert (Deportiva.Marca + " " + Deportiva.Modelo + " " + "La moto perfecta para salir de paseo con tu familia o amigos¡¡")
+
 
     mostrarDeportiva ();
 }
