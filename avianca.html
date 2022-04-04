@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avianca</title>
+    <link rel="stylesheet" href="css/avianca.css">
+    <link rel="stylesheet" href="icons/all.css">
+    <script src="js/avianca.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <a href="#"><i class="fas fab fa-plane"> Avianca</i></a>
+        <a class="fas viajes" href="#">Mis viajes</a>
+        <a class="fas ofertas" href="#">Ofertas</a>
+        <a class=" fas ayuda" href="#">Ayuda</a>
+        <a href="#"><i class="fas fa-bell"></i></a>
+        <a href="#"><i class="fas fa-bars"></i></a>
+    </div>
+    <div class="Contenedor2">
+        <h2>¿Ha donde quieres ir?</h2>
+        <input class="Sitio" type="label" placeholder="Desde" > <i class="fas far fa-plane-departure"></i>
+        <input class="Sitio" type="label" placeholder="Hacia"><i class="fas far fa-plane-arrival"></i>
+    </div>
+    <div class="Contenedor2">
+
+        <h2>¿Cuando viajas?</h2>
+        <input class="Sitio" type="label" placeholder="Salida"> <i class="fas far fa-calendar"></i>
+        <input class="Sitio" type="label" placeholder="vuelta"> <i class="fas far fa-calendar"></i>
+    </div>
+    <div class="Contenedor2">
+
+        <h2>¿Como viajas?</h2>
+        <input class="Sitio" type="label" placeholder="Pasajeros"><i class="fas far fa-user"></i>
+
+    </div>
+     <input class="Boton" type="submit" value="vuelos disponibles" onclick="MostrarVuelos()">
+     <div id="contenedor">
+
+     </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.fas{
+display: block;
+padding: 15px;
+color: white;
+font-size: 20px;
+font-weight: bold;
+text-decoration: none;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: center;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns:repeat(6, 1fr) ;
+    grid-template:  "avion  viajes   ofertas  ayuda    campana  bars" /
+                     2fr     200px    150px     150px     80px      80px;
+  
+     width: 100%;   
+    margin: 0 auto;  
+    background-color: rgb(250, 16, 16);                    
+} 
+
+.fab{
+    grid-area: avion;
+    border: 1px solid  black;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    margin-left: 70px;
+    font-size: 25px;
+    
+}
+.viajes{
+    grid-area: viajes;
+}
+.ofertas{
+    grid-area: ofertas;
+}
+.ayuda {
+    grid-area: ayuda;
+}
+.fa-bell {
+    grid-area: campana;
+    margin: 3px;
+
+}
+.fa-bars{
+    grid-area: bars;
+    margin: 3px;
+}
+.fas:hover {
+    background-color: rgb(155, 16, 16);
+}
+h2 {
+    padding: 20px;
+    text-align: center;
+}
+.Contenedor2 {
+    margin-left: 100px;
+    display: inline-block;
+}
+.far {
+    color: black;
+}
+.Sitio {
+
+    border-top: 0px ;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+    outline: none;
+}
+.far:hover {
+    background: white;
+}
+.Boton {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+.Boton:hover {
+   background-color:  rgb(102, 2, 2);
+   transition: 1s;
+   translate: 1px;
+}
