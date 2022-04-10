@@ -2,110 +2,120 @@
     margin: 0;
     padding: 0;
 }
-header {
-    width: 100%;
+h1 {
+    text-align: center;
+}
+body {
+    background: rgba(255, 127, 80, 0.479);
 }
 .menu-bar {
     display: none;
+}
+header {
     width: 100%;
 }
-.bt-menu {
-    display: block;
-    padding: 20px;
-}
-nav {
-    background-color: rgba(109, 101, 101, 0.938);
+header nav {
+    background: coral;
     width: 100%;
-    font-size: 1.3em;
-}
-ul {
-    list-style: none;
 }
 nav ul {
-    text-align: left;
+    list-style: none;
+    text-align: right;
 }
 nav ul li {
     display: inline-block;
+    position: relative;
 }
-nav ul li:hover{
-    background-color: rgb(66, 61, 61);
+nav ul li:hover {
+    background: rgba(255, 127, 80, 0.664);
 }
-nav ul li i {
-    margin-right: 7px;
+nav ul li a {
+    display: block;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
 }
-nav ul .fa-chevron-down {
+nav ul li .children {
+    display: none;
+    position: absolute;
+    background: coral;
+    text-align: left;
+}
+nav ul li:hover .children {
+    display: block;
+    text-align: left;
+}
+nav ul li .children li {
+overflow: hidden;
+display: block;
+border-bottom: 1px solid black;
+}
+nav ul li .children li a {
+    display: block;
+}
+nav ul li span {
+    margin-right: 10px;
+}
+nav ul li .icon-chevron-small-down {
     position: relative;
     top: 3px;
     margin-left: 10px;
 }
-a {
-    color: rgb(122, 203, 206);
-    padding: 20px;
-    text-decoration: none;
-    display: block;
-}
-.children{
-    display: none;
-    position: absolute;
-    background-color: rgb(109, 101, 101);
-}
-nav ul li:hover .children {
-    display: block;
-}
-.children li {
-    display: block;
-}
-.children li a {
-    color: rgb(122, 203, 206);
-    display:block;
-    text-align: left;
-}
-.main-content {
-    margin: 30px;
-}
-h1 {
-    text-align: center;
-}
-p{
-    font-size: 1,2em;
-    line-height: 1.4em;
-    text-align: justify;
-}
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width:830px) {
     body {
-        padding-top: 70px;
+        padding-top: 68px;
     }
-    .menu-bar{
+    .menu-bar {
         display: block;
         position: fixed;
-        background-color: rgb(109, 101, 101);
         width: 100%;
+        background: coral;
         top: 0;
     }
-    .bt-menu {
-        display: block;
-        padding: 20px;
-        color: rgb(122, 203, 206);
-        font-size: 25px;
-        font-weight: bold;
-    }
-    nav {
-        width: 75%;
-        position: fixed;
-        height: calc(100% - 80px);
-    }
-    nav ul {
-        text-align: left;
-    }
-    nav ul li {
-        display: block;
-        border-bottom: 1px solid rgb(122, 203, 206);
-    }
-    .children {
-        display: none;
-    }
-    .menu-bar i {
-        float: right;
-        font-size: 30px;
-    }
+.bt-menu {
+    display: block;
+    padding: 20px;
+    color: cornsilk;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    overflow: hidden;
+}
+.menu-bar span {
+    float: right;
+    font-size: 40px;
+}
+header nav {
+width: 80%;
+position: fixed;
+height: calc(100% - 80px);
+background: coral;
+left: -100%;
+overflow: scroll;
+}
+header nav ul {
+    text-align: center;
+}
+header nav ul li {
+    display: block;
+    border-bottom: 1px solid rgb(247, 246, 246);
+}
+header nav ul li a {
+    display: block;
+} 
+header nav ul li .children {
+    position: relative;
+    width: 100%;
+}
+header nav ul li .children li a {
+    text-align: center;
+    padding-left: -10px;
+    background-color: coral;
+}
+nav ul li .icon-chevron-small-down {
+    float: right;
+}
+nav ul li:hover .children {
+    display: none;
+}
 }

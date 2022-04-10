@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.contenedor1 {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template: "nombre perfil categoria ayuda contactenos foro  menu"/
+                        1fr  150px   150px 150px  150px  100px   50px;
+
+                    
+background-color: rgb(3, 3, 92);
+height: 70px;
+}
+.fas {
+    font-size: 25px;
+    grid-area: menu;
+    color: aliceblue;
+    text-align: center ;
+    /* padding: 10px; */
+    padding-top: 20px;
+
+}
+.nombre {
+    font-size: 30px;
+    grid-area: nombre;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    
+    padding: 20px;
+    margin-right: 90%;
+}
+.perfil {
+    grid-area: perfil;
+    cursor: pointer;
+}
+.categoria {
+    grid-area: categoria;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+/* .manos {
+    grid-area: manos;
+} */
+.foro {
+    grid-area: foro;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+}
+.ayuda {
+    grid-area: ayuda;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+}
+.contactenos {
+    grid-area: contactenos;
+    text-align: center;
+    cursor: pointer;
+
+}
+nav ul {
+    list-style: none;
+    text-align: right;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+nav ul li:hover {
+    background:rgb(12, 12, 224) ;
+}
+nav ul li a {
+    display: block;
+    color: aliceblue;
+    padding: 20px;
+    text-decoration: none;
+}
+nav ul li .children {
+    display: none;
+    position: absolute;
+    background: rgb(3, 3, 92);
+    text-align: center;
+}
+nav ul li:hover .children {
+    display: block;
+    text-align: center;
+}
+nav ul li .children li {
+overflow: hidden;
+display: block;
+border-bottom: 1px solid black;
+}
+nav ul li .children li a {
+    display: block;
+}
+nav ul li span {
+    margin-right: 10px;
+}
+nav ul li .icon-chevron-small-down {
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+}
+.fas:hover {
+      background-color: rgb(12, 12, 224);
+}
