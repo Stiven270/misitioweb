@@ -1,7 +1,7 @@
-/* .row>[class^="col-"]{
+ .row>[class^="col-"]{
     border: 1px solid brown;
-} */
-/* .column {
+} 
+ .column {
     margin-bottom: 30px;
 
 }
@@ -61,7 +61,7 @@ select {
 .carousel-item {
     padding-left: 500px;
     padding-bottom: 60px;
-} */
+} 
 
 
 
