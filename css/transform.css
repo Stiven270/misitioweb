@@ -1,4 +1,4 @@
-.transform1 {
+/* .transform1 {
     width: 150px;
     height: 150px;
     background-color: aqua;
@@ -16,22 +16,11 @@
     height: 50px;
     background-color: rgb(250, 143, 143);
     transition: width 1s, height 1s, transform 1s;
-    /* transform: translate(-60%, -60%);
-    margin-top: 50px;
-    margin-left: 50px;  */
+
 
 
 }
-.transform4{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(255, 230, 230);
-    transition: transform 1s, withd 1s, height 1s;
-    /* margin-left: 99%;
-    margin-top: 100%; */
-    position: fixed;
-    
-}
+
 .transform1:hover {
     transform: translate(100px, 0);
     cursor: pointer;
@@ -46,5 +35,109 @@
     transform: translate(1%, -1%);
     width: 150px;
     height: 150px;
+} */
+* {
+    margin: 0;
+    padding: 0;
+}
+.Contenedor {
+    border: 1px solid gainsboro;
+    height: 70px;
+    display: grid;
+    grid-template:"img   buscador cuenta" /
+                            1fr       2fr      60px;
+}
+.img{
+    grid-area: img;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.bus{
+    padding: 10px;
+    border: 1px solid rgb(210, 210, 210);
+    width: 60%;
+    border-radius: 5px;
+    margin-top: 2%;
+    font-size: 17px;
+    outline: none;
+    
+}
+.buscador{
+    grid-area: buscador;
+
+    
 }
 
+.cuenta{
+    grid-area: cuenta;
+    font-size: 23px;
+    margin-top: 40%;
+    cursor: pointer;
+    color: rgb(155, 154, 154);
+}
+.transform4{
+    
+    border: 1px solid black;
+    position: absolute;
+    bottom: 40px; 
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    transition: transform 1s, width 1s, height 1s; 
+    
+
+    /* display: none; */
+}
+/* .raya{
+    border: 8px;
+    display: none;
+} */
+.transform5{
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    transition: width  700ms,  height  700ms;
+    width: 300px;
+    height: 300px;
+}
+
+.botonCerrar {
+    display: none;
+    
+    
+}
+.botonCerrarVisible {
+    display: block;
+    cursor: pointer;
+    margin-left: 80%;
+    text-align: center;
+}
+#botonForm{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.botonDaniel{
+   border: 1px solid black;
+   border-radius: 10px;  
+   font-size: 20px; 
+   width: 80px;
+   background-color: rgb(28, 28, 237);
+   color: aliceblue;
+}
+.div2{
+    border: 1px solid rgb(63, 63, 63);
+    margin: auto 5px;
+   
+    
+   
+}
+.styleDesc{
+   text-align: justify;
+   padding: auto;
+   display: none;
+}
