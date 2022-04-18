@@ -40,6 +40,7 @@
     margin: 0;
     padding: 0;
 }
+
 .Contenedor {
     border: 1px solid gainsboro;
     height: 70px;
@@ -78,12 +79,13 @@
 .transform4{
     
     border: 1px solid black;
-    position: absolute;
-    bottom: 40px; 
-    right: 10px;
-    width: 50px;
-    height: 50px;
-    transition: transform 1s, width 1s, height 1s; 
+    
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    width: 0px;
+    height: 0px;
+    transition: transform 20ms, width 600ms, height 600ms; 
     
 
     /* display: none; */
@@ -93,45 +95,57 @@
     display: none;
 } */
 .transform5{
-    position: absolute;
+    position: fixed;
     bottom: 40px;
     right: 10px;
     width: 50px;
     height: 50px;
     border: 1px solid black;
-    border-radius: 15px;
+    
     transition: width  700ms,  height  700ms;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 650px;
 }
 
 .botonCerrar {
     display: none;
+    grid-area: boton;
+   
     
     
 }
 .botonCerrarVisible {
-    display: block;
+    /* display: block; */
     cursor: pointer;
-    margin-left: 80%;
+    /* text-align: center; */
+    color: white;
+    background-color: rgb(9, 106, 252);
+    border-radius: top 15px;
     text-align: center;
+    font-size: 20px;
+    padding: 8px;
+    
 }
 #botonForm{
     position: absolute;
     bottom: 10px;
     right: 10px;
+    border-radius: 15px;
 }
 .botonDaniel{
-   border: 1px solid black;
-   border-radius: 10px;  
+   border: 1px solid white;
+    
    font-size: 20px; 
    width: 80px;
-   background-color: rgb(28, 28, 237);
-   color: aliceblue;
+   background-color: white;
+   color: rgb(75, 125, 170);
+   cursor: pointer;
 }
 .div2{
-    border: 1px solid rgb(63, 63, 63);
+   
+    border: 1px solid rgb(215, 215, 215);
     margin: auto 5px;
+    
    
     
    
@@ -140,4 +154,28 @@
    text-align: justify;
    padding: auto;
    display: none;
+}
+.contenedorx{
+    background-color: rgb(9, 106, 252);
+    
+    display: grid;
+    grid-template: "menuu   img    boton" /
+                     1fr   1fr    1fr;
+                     
+    width: 100%;
+    
+}
+.img{
+    grid-area: img;
+    border-radius: 30px;
+    
+    
+    
+}
+.fas{
+    grid-area: menuu ;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    display: none;
 }
