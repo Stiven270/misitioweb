@@ -15,6 +15,7 @@ function mostrarform() {
     div4.classList.remove("transform4");
     botonCerrar.classList.add("botonCerrarVisible");
     botonCerrar.classList.remove("botonCerrar");
+    
 
     let div2 = document.createElement("div")
     let contenedor = document.getElementById("div2");
