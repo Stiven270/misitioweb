@@ -10,7 +10,7 @@ class vuelos {
     }
 }
 let vuelo = [{
-    "origen" : "Bogotà",
+    "origen" : "Bogotá",
     "destino" :"Cartagena",
     "precio" : 250000 + " " + "Cop",
     "horaInicio" : "05:08",
@@ -18,7 +18,7 @@ let vuelo = [{
     "directo" : "Vuelo Directo",
 },
 {
-    "origen": "Bogotà",
+    "origen": "Bogotá",
     "destino": "Cartagena",
     "precio" : 290000 + " " + "Cop",
     "horaInicio" : "06:09",
@@ -27,7 +27,7 @@ let vuelo = [{
 
 },
 {
-    "origen": "Bogotà",
+    "origen": "Bogotá",
     "destino": "Cartagena",
     "precio" : 200000 + " " + "Cop",
     "horaInicio" : "06:00",
@@ -35,7 +35,7 @@ let vuelo = [{
     "directo" : "Vuelo Directo",
 },
 {
-    "origen": "Bogotà",
+    "origen": "Bogotá",
     "destino": "Cartagena",
     "precio" : 520000 + " " + "Cop",
     "horaInicio" : "05:00",

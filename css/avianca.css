@@ -93,8 +93,8 @@ h2 {
     display: grid;
 
     grid-template: "style-origen style-directo style-destino  style-precio    " 25px
-                     "empty    style-directo style-destin  style-precio" 25px/
-                              1fr           1fr       1fr           1fr;
+                     "empty    style-directo    style-destin  style-precio" 25px/
+                     1fr           1fr             1fr           1fr;
     font-size: 25px;
     text-align: center;
     border: 1px solid gray;
