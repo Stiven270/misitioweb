@@ -62,3 +62,26 @@ label {
     font-size: 27px;
 
 }
+.div{
+    border: 1px solid black;
+    width: 40%;
+    height: 50%;
+    display: grid;
+    grid-template: "img label1" 25px 
+                    "img label2" 30px
+                    "img   label3" 25px
+                    "img   auto" auto/
+                     2fr    3fr ;
+}
+.label1{
+    grid-area: label1;
+}
+.label2{
+    grid-area: label2;
+}
+.label3{
+    grid-area: label3;
+}
+.img{
+    grid-area: img;
+}

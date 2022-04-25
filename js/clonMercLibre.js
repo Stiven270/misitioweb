@@ -18,28 +18,33 @@ function mostrarMoto (){
     let contentPrincipal  = document.getElementById("moticos");
     let contentMoto = document.createElement("div");
     contentPrincipal.appendChild(contentMoto);
+    contentMoto.setAttribute("class", "div");
 
     let marcaMoto = document.createElement("label");
     contentMoto.appendChild(marcaMoto);
     let textMarca = document.createTextNode(moto.marca)
     marcaMoto.appendChild(textMarca);
+    marcaMoto.setAttribute("class", "label1");
 
     
     let modeloMoto = document.createElement("label");
     contentMoto.appendChild(modeloMoto);
     let textModelo = document.createTextNode(moto.modelo)
     modeloMoto.appendChild(textModelo);
+    modeloMoto.setAttribute("class", "label2");
 
     
     let precioMoto = document.createElement("label");
     contentMoto.appendChild(precioMoto);
     let textPrecio = document.createTextNode(moto.precio)
     precioMoto.appendChild(textPrecio);
+    precioMoto.setAttribute("class", "label3");
 
  
     let imagenMoto = document.createElement("img");
     contentMoto.appendChild(imagenMoto);
     imagenMoto.setAttribute("src", moto.img);
+    imagenMoto.setAttribute("class","img")
 }
 let Deportiva = new Motocicleta ("deportiva", " 4 ", " $ 25.800.000", "img/moto_Deportiva.jpg");
 
