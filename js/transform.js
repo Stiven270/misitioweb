@@ -4,17 +4,17 @@ let div4 = document.getElementById("div4");
 
 
 
-let botonCerrar = document.getElementById("botonCerrar");
+let botonCerrar1 = document.getElementById("botonCerrar");
 
 botonForm.addEventListener("click",mostrarform);
 
-botonCerrar.addEventListener("click",ocultarForm );
+botonCerrar1.addEventListener("click",ocultarForm );
 
 function mostrarform() {
     div4.classList.add("transform5");
     div4.classList.remove("transform4");
-    botonCerrar.classList.add("botonCerrarVisible");
-    botonCerrar.classList.remove("botonCerrar");
+    botonCerrar1.classList.add("botonCerrarVisible");
+    botonCerrar1.classList.remove("botonCerrar");
     
 
     let div2 = document.createElement("div")
@@ -65,5 +65,32 @@ function ocultarForm(){
 //     contenedor.appendChild(div2)
 //     contenedor.setAttribute("class", "div2")
 // }
+"use strict"
+
+
+let botonOpenHeader = document.getElementById("header-movil-open");
+let botonCerrarHeader = document.getElementById("boton-cerrar-header");
+let Header = document.getElementById("header");
+
+
+botonOpenHeader.addEventListener("click", dezplegarCajaHeader);
+botonCerrarHeader.addEventListener("click", cerrarCajaHeader);
+
+function dezplegarCajaHeader(){
+
+    document.getElementById("header-movil").classList.add("contenedor-barra-busqueda-movil");
+
+    document.getElementById("header-movil").classList.remove("contenedor-barra-busqueda-movil-out");
+
+    document.getElementById("header").style.display="none";
+}
+
+function cerrarCajaHeader(){
+    document.getElementById("header-movil").classList.remove("contenedor-barra-busqueda-movil");
+
+    document.getElementById("header-movil").classList.add("contenedor-barra-busqueda-movil-out");
+
+    document.getElementById("header").style.display="flex";
+}
 
 
