@@ -60,28 +60,76 @@
      */
 label {
     font-size: 27px;
+    
 
 }
 .div{
     border: 1px solid black;
-    width: 40%;
-    height: 50%;
+    
     display: grid;
-    grid-template: "img label1" 25px 
+    grid-template: "img label1 " 30px 
                     "img label2" 30px
-                    "img   label3" 25px
-                    "img   auto" auto/
-                     2fr    3fr ;
+                    "img   label3" 30px
+                    "img   empty " auto  /
+                     6fr    8fr ;
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 20%;
+    border-radius: 15px;
+    padding: 10px;
+    /* grid-auto-flow: dense;
+    background-repeat: no-repeat;
+    background-position: center; */
+    cursor: pointer;
+    
+    
 }
 .label1{
     grid-area: label1;
+    cursor: pointer;
+    
 }
 .label2{
     grid-area: label2;
+    cursor: pointer;
+    
 }
 .label3{
     grid-area: label3;
+    cursor: pointer;
+    
 }
 .img{
     grid-area: img;
+    height: 30vh;
+    
+   
+    
+}
+.div:hover{
+    transition-duration: 200ms;
+    transform: translate(3px, 2px);
+    box-shadow: 4px 4px 4px gray;
+}
+@media only screen and (max-width:886px) {
+   .img{
+       height: 20vh;
+   }
+   label{
+       font-size: 25px;
+   }
+}
+@media only screen and (max-width:800px){
+    .div{
+        width: 90%;
+        margin-left: 2%;
+        border-radius: 10px;
+    }
+    .img{
+        height: 15vh;
+    }
+    label{
+        font-size: 20px;
+    }
+
 }
