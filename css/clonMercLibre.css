@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: rgb(236, 235, 235);
+}
 
 .bt-menu {
     display: block;
@@ -21,6 +24,8 @@
     margin: 0 auto;
     background-color: rgb(243, 247, 8);
     text-align: center;
+    
+    
 
 }
  .hijo-1 {
@@ -81,6 +86,8 @@ label {
     background-repeat: no-repeat;
     background-position: center; */
     cursor: pointer;
+    background-color: white;
+    
     
     
 }
